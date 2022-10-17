@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>Front-End Developer test</title>
+</head>
+<body>
+    <!-- container -->
+    <div class="container"> 
+
+        <!--header-->
+        <header class="header">
+
+            <section class="header__section">
+
+                <div class="header__section--lang">
+                    <img src="./images/-Flag_of_the_United_Kingdom.png" alt="" width="15px" height="10px">
+                    <select class="header__section--select" name="" id="">
+                        <option value="">EN</option>
+                        <option value="">RU</option>
+                        <option value="">ARM</option>
+                    </select>
+                </div>
+
+                <div class="header__section--user">
+                    <img src="./images/userphohoto.png" alt="" width="42px" height="42px">
+                    <div class="header__section--wrapper">
+                        <p class="header__section--wrapper__name">Hello, Max!</p>
+                        <p class="header__section--wrapper__login">Last login: Thu Mar 20 2014</p>
+                    </div>
+                    <i class="fa-solid fa-sort-down"></i>
+                </div>
+
+            </section>
+
+        </header>
+        <!--/header-->
+
+            <!-- nav open-->
+            <nav id="navOpen" class="nav--open none">
+
+                <div class="nav__logo">
+                    <a href="#"><img src="./images/bw.png" alt="" width="48px" height="46px"></a>
+                </div>
+
+                <div id="openModal" class="nav__modalIcon">
+                   <img src="./images/Shape 1 copy 4.png" alt="" width="7px" height="11px">
+                </div>
+            
+                <!--nav blocks-->
+                <div class="nav__blocks">
+
+                    <div class="nav__blocks--wrapper">
+                        <ul class="nav__blocks--icons">
+                            <a href="#"><img src="./images/dashboard.png" alt="" width="16px" height="14px"></a>
+                            <li class="nav__blocks--icons__text">Dashboard</li>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <a href="#"><img src="./images/key.png" alt="" width="16px" height="15px"></a>
+                            <li class="nav__blocks--icons__text">Account Management</li>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <a href="#"><img src="./images/user.png" alt="" width="13px" height="15px"></a>
+                            <li class="nav__blocks--icons__text">My Account</li>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <a href="#"><img src="./images/tools.png" alt="" width="15px" height="13px"></a>
+                            <li class="nav__blocks--icons__text">Marketing Tools</li>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <a href="#"><img src="./images/reports.png" alt="" width="16px" height="13px"></a>
+                            <li class="nav__blocks--icons__text">Reports</li>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <a href="#"><img src="./images/payments.png" alt="" width="17px" height="13px"></a>
+                            <li class="nav__blocks--icons__text">Payments</li>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <a href="#"><img src="./images/Settings.png" alt="" width="14px" height="14px"></a>
+                            <li class="nav__blocks--icons__text">Settings</li>
+                            <i class="fa-solid fa-sort-down"></i>
+                        </ul>
+                    </div>
+                    <div class="nav__blocks--wrapper2">
+                        <ul class="nav__blocks--icons">
+                            <img src="./images/favorites.png" alt="" width="16px" height="14px">
+                            <li class="nav__blocks--icons__text">Favorites</li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <img src="./images/recently.png" alt="" width="16px" height="16px">
+                            <li class="nav__blocks--icons__text">Recently Used</li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </ul>
+                        <ul class="nav__blocks--icons">
+                            <img src="./images/visited.png" alt="" width="18px" height="10px">
+                            <li class="nav__blocks--icons__text">Visited Player</li>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--/nav blocks-->
+            </nav>
+            <!--/nav open -->
+
+
+
+            <!-- nav closed-->
+            <nav id="navClose" class="nav--closed">
+            
+                <div class="nav__logo">
+                    <a href="#"><img src="./images/bw.png" alt="" width="48px" height="46px"></a>
+                </div>
+            
+                
+                <div id="closeModal" class="nav__modalIcon">
+                   <img src="./images/Shape 1 copy 4.png" alt="" width="7px" height="11px">
+                </div>
+                
+            
+                <!--nav blocks-->
+                <div class="nav__blocks">
+                
+                
+                    <div class="nav__blocks--wrapper">
+                    
+                        <div class="nav__blocks--icons">
+                            <a href="#"><img src="./images/dashboard.png" alt="" width="16px" height="14px"></a>
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <a href="#"><img src="./images/key.png" alt="" width="16px" height="15px"></a>
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <a href="#"><img src="./images/user.png" alt="" width="13px" height="15px"></a>
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <a href="#"><img src="./images/tools.png" alt="" width="15px" height="13px"></a>
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <a href="#"><img src="./images/reports.png" alt="" width="16px" height="13px"></a>
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <a href="#"><img src="./images/payments.png" alt="" width="17px" height="13px"></a>
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <a href="#"><img src="./images/Settings.png" alt="" width="14px" height="14px"></a>
+                        </div>
+                    
+                    </div>
+                
+                    <div class="nav__blocks--wrapper2">
+                    
+                        <div class="nav__blocks--icons">
+                            <img src="./images/favorites.png" alt="" width="16px" height="14px">
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <img src="./images/recently.png" alt="" width="16px" height="16px">
+                        </div>
+                    
+                        <div class="nav__blocks--icons">
+                            <img src="./images/visited.png" alt="" width="18px" height="10px">
+                        </div>
+                    
+                    </div>
+                
+                    
+                </div>
+                <!--/nav blocks-->
+            </nav>
+            <!--/nav closed -->
+
+
+
+
+        <div class="dashboard">
+            <p class="dashboard__text">Dashboard</p>
+            <div class="dashboard__add">
+                <div class="dashboard__wrapper">
+                    <i class="fa-solid fa-heart dashboard__wrapper--icon"></i>
+                    <p class="dashboard__wrapper--text">add this page to favorites</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--features-->
+        <div class="features"> 
+
+            <div class="features--wrapper">
+                <div class="features--content1">
+                    <p class="features--text1">25</p>
+                    <div class="features--wrapper1">
+                        <i class="fa-solid fa-check"></i>
+                        <p class="features--txt">signups</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features--wrapper">
+                <div class="features--content2">
+                    <p class="features--text2">$1000</p>
+                    <div class="features--wrapper2">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <p class="features--txt">profit</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features--wrapper">
+                <div class="features--content3">
+                    <p class="features--text3">$350</p>
+                    <div class="features--wrapper3">
+                        <i class="fa-regular fa-money-bill-1"></i>
+                        <p class="features--txt">commissions</p>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="features--wrapper">
+                <div class="features--content4">
+                    <p class="features--text4">$300</p>
+                    <div class="features--wrapper4">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <p class="features--txt">pending commissions</p>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+        <!--/features-->
+
+        <!--diagram-->
+        <section class="diagram">
+
+            <!-- Block 1 -->
+            <div class="diagram__stats">
+
+                <div class="diagram__stats--header">
+                    <h6 class="diagram__stats--text">Medias Staats</h6>
+                    <span class="diagram__stats--span">
+                        <p class="diagram__stats--span__txt">Last Week</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+
+                <div class="diagram__stats--chart" >
+                    <canvas id="myChart" width="380px" height="240px"></canvas>
+                </div>
+            </div>
+            <!-- /Block 1 -->
+
+
+            <!-- Block 2 -->
+            <div class="diagram__active">
+
+                <div class="diagram__active--title">
+                    <h6>Active Medias</h6>
+                </div>
+
+                <div class="diagram__active--doughnut">
+                    <canvas id="myDoughnut" style="height:135px; width:135px"></canvas>
+                </div>
+
+                <div class="diagram__active--info">
+                    <span class="diagram__active--info__txt">
+                        <p>CTR</p>
+                        <p>25%</p>
+                    </span>
+                    <span class="diagram__active--info__txt">
+                        <img src="./images/Ellipse 3.png" alt="" width="10px" height="10px">
+                        <p>Total Views</p>
+                        <p>200</p>
+                    </span>
+                    <span class="diagram__active--info__txt">
+                        <img src="./images/Ellipse 3 copy.png" alt="" width="10px" height="10px">
+
+                        <p>Total Clicks</p>
+                        <p>65</p>
+                    </span>
+                    <span class="diagram__active--info__txt">
+                        <img src="./images/Ellipse 3 copy 2.png" alt="" width="10px" height="10px">
+
+                        <p>Signups</p>
+                        <p>22</p>
+                    </span>
+                </div>
+
+            </div>
+            <!-- /Block 2 -->
+
+
+            <!-- Block 3 -->
+            <div class="diagram__map">
+
+                <div class="diagram__map--title">
+                    <h6 class="diagram__map--text">Medias Staats</h6>
+                    <span class="diagram__map--span">
+                        <p class="diagram__map--span__txt">Last Month</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+                </div>
+
+                <div class="diagram__map--wrapper">
+                    <svg id="my_dataviz" width="306" height="120"></svg>
+                </div>
+
+                <div class="diagram__map--info">
+
+                    <span class="diagram__map--info__span">
+                        <p class="diagram__map--span__txt">Affiliate Sign Ups</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </span>
+
+                    <div class="diagram__map--span__stats">
+                        <p>1. United States</p>
+                        <p>200</p>
+                    </div>
+                    <div class="diagram__map--span__stats">
+                        <p>2. China</p>
+                        <p>65</p>
+                    </div>
+                    <div class="diagram__map--span__stats">
+                        <p>3. United Kingdom</p>
+                        <p>22</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <!-- /Block 3 -->
+
+
+        </section>
+        
+        <!--info-->
+        <section class="info">
+            <p class="info__text">Top Affiliates</p>
+            <p class="info__text">Signups</p>
+            <p class="info__text">Pending Commissions</p>
+        </section>
+        <!--/info-->
+        
+
+        <!--Section(.tables) have 3 table -->
+        <section class="tables">
+            <!--table №1-->
+            <table class="table">  
+                <tr class="table__title">
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Profit($)</th>
+                    <th>Comissions($)</th>
+                    <th>View</th>
+                </tr>
+                <tr class="table__content">
+                    <td>1007</td>
+                    <td>Simona</td>
+                    <td>55</td>
+                    <td>Simona</td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                </tr>
+                <tr class="table__content">
+                    <td>1008</td>
+                    <td>Ariana</td>
+                    <td>45</td>
+                    <td>Adelina</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr>
+                <tr class="table__content">
+                    <td>1009</td>
+                    <td>Adam</td>
+                    <td>35</td>
+                    <td>Adam</td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                </tr> 
+                <tr class="table__content">
+                    <td>1010</td>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>John</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr> 
+                <tr class="table__content">
+                    <td>1011</td>
+                    <td>Garry</td>
+                    <td>15</td>
+                    <td>Garry</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr>
+            </table> 
+            <!--/table №1-->
+
+            <!--table №2-->
+            <table class="table">
+                <tr class="table__title">
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Profit($)</th>
+                    <th>Comissions($)</th>
+                    <th>View</th>
+                </tr>
+                <tr class="table__content">
+                    <td>1007</td>
+                    <td>Simona</td>
+                    <td>55</td>
+                    <td>Simona</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr>
+                <tr class="table__content">
+                    <td>1008</td>
+                    <td>Ariana</td>
+                    <td>45</td>
+                    <td>Adelina</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr>
+                 <tr class="table__content">
+                    <td>1009</td>
+                    <td>Adam</td>
+                    <td>35</td>
+                    <td>Adam</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr> 
+                <tr class="table__content">
+                    <td>1010</td>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>John</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr> 
+                <tr class="table__content">
+                    <td>1011</td>
+                    <td>Garry</td>
+                    <td>15</td>
+                    <td>Garry</td>
+                    <td><i class="fa-solid fa-list"></i></i></td>
+                </tr>
+            </table>
+            <!--/table №2-->
+
+            <!--table №3-->
+            <table class="table"> 
+                <tr class="table__title">
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Profit($)</th>
+                    <th>Comissions($)</th>
+                    <th>View</th>
+                </tr>
+                <tr class="table__content">
+                    <td>1007</td>
+                    <td>Simona</td>
+                    <td>55</td>
+                    <td>Simona</td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                </tr>
+                <tr class="table__content"> 
+                    <td>1008</td>
+                    <td>Ariana</td>
+                    <td>45</td>
+                    <td>Adelina</td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                </tr>
+                <tr class="table__content">
+                    <td>1009</td>
+                    <td>Adam</td>
+                    <td>35</td>
+                    <td>Adam</td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                </tr> 
+                <tr class="table__content">
+                    <td>1010</td>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>John</td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                </tr> 
+                <tr class="table__content">
+                    <td>1011</td>
+                    <td>Garry</td>
+                    <td>15</td>
+                    <td>Garry</td>
+                    <td><i class="fa-solid fa-list"></i></td>
+                </tr>
+
+            </table>
+             <!--/table №3-->
+
+        </section>
+        <!--/section tables-->
+    </div> 
+    <!-- /container -->
+
+    <script src="http://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

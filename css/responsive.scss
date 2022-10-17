@@ -1,0 +1,264 @@
+
+
+@media (max-width: 768px) {
+
+    body {
+        margin-top: 0;
+
+        .container {
+            height: auto;
+                .header {
+    
+                .header__section {
+                    justify-content: flex-start;
+                    margin-left: 60px;
+                }
+            }
+
+            .features {
+                padding-left: 0;
+                flex-direction: column;
+                height: auto;
+                flex-wrap: wrap;
+
+                .features--wrapper {
+                    width: 100%;
+
+                    .features--content1 {
+                        background: none;
+                    }
+                    .features--content2 {
+                        background: none;
+                    }
+                    .features--content3 {
+                        background: none;
+                    }
+                    .features--content4 {
+                        background: none;
+                    }
+                }
+            }
+
+            .nav--closed {
+                height: 460px;
+            }
+
+            .nav--open {
+                height: 460px;
+            }
+
+            .diagram {
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+                width: 768px;
+                padding-left: 0;
+                display: block;
+
+                .diagram__stats {
+                    width: 700px;
+                    height: auto;
+                }
+
+                .diagram__active {
+                    background-color: #2a2a2a;
+                    margin: auto;
+                }
+
+                .diagram__map {
+                    margin: auto;
+                }
+            }
+
+            .tables {
+                flex-direction: column;
+                height: auto;
+                padding-left: 0;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 414px) {
+
+    body {
+        margin-top: 0;
+
+        .container {
+            height: auto;
+                .header {
+    
+                .header__section {
+                    justify-content: flex-start;
+                    margin-left: 60px;
+
+                    .header__section--lang {
+                        width: 35px;
+                    }
+
+                    .header__section--user {
+                        width: 250px;
+                    }
+
+                }
+            }
+
+            .nav--closed {
+                height: 460px;
+                width: 35px;
+
+                .nav__blocks {
+                    width: 20px;
+                }
+
+                .nav__modalIcon {
+                    left: 35px;
+                }
+            }
+
+            .nav--open {
+                height: 460px;
+            }
+
+            .diagram {
+                width: 100%;
+                padding-left: 0;
+
+                .diagram__stats {
+                    width: 100%;
+                }
+
+                .diagram__active {
+                    background-color: #2a2a2a;
+                }
+            }
+
+            .dashboard {
+                display: none;
+            }
+
+            .features {
+                height: auto;
+                flex-direction: column;
+                padding-left: 0;
+
+                .features--wrapper {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                padding-left: 0;
+                justify-content: flex-start;
+
+                .info__text {
+                    width: 140px;
+                    font-size: 12px;
+                    padding-left: 5px;
+
+                }
+            }
+            .tables {
+                width: 100%;
+
+                .table {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 375px) {
+
+    body {
+        margin-top: 0;
+
+        .container {
+            height: auto;
+                .header {
+    
+                .header__section {
+                    justify-content: flex-start;
+                    margin-left: 60px;
+
+                    .header__section--lang {
+                        width: 35px;
+                    }
+
+                    .header__section--user {
+                        width: 250px;
+                    }
+
+                }
+            }
+
+            .nav--closed {
+                height: 460px;
+                width: 35px;
+
+                .nav__blocks {
+                    width: 20px;
+                }
+
+                .nav__modalIcon {
+                    left: 35px;
+                }
+            }
+
+            .nav--open {
+                height: 460px;
+            }
+
+            .diagram {
+                width: 100%;
+                padding-left: 0;
+
+                .diagram__stats {
+                    width: 100%;
+                }
+
+                .diagram__active {
+                    background-color: #2a2a2a;
+                }
+            }
+
+            .dashboard {
+                display: none;
+            }
+
+            .features {
+                height: auto;
+                flex-direction: column;
+                padding-left: 0;
+
+                .features--wrapper {
+                    width: 100%;
+                }
+            }
+
+            .info {
+                padding-left: 0;
+                justify-content: flex-start;
+
+                .info__text {
+                    width: 102px;
+                    font-size: 12px;
+                    padding: 0;
+
+                }
+            }
+            .tables {
+                width: 350px;
+
+                .table {
+                    height: auto;
+                }
+            }
+        }
+    }
+}
