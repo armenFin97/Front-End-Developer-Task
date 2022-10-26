@@ -3,25 +3,58 @@ let openModal = document.getElementById('openModal');
 let navOpen = document.getElementById('navOpen');
 let closeModal = document.getElementById('closeModal');
 let navClose = document.getElementById('navClose');
+let body = document.querySelector('.body')
 
 /* Listenners for open/close modal */
-openModal.addEventListener('click', () => {
-    navOpen.classList.add('none');
-    navClose.classList.remove('none');
-});
-closeModal.addEventListener('click', () => {
-    navOpen.classList.remove('none');
-    navClose.classList.add('none');
+iconModal.addEventListener('click', () => {
+  navOpen.classList.toggle('hidden');
+  navClose.classList.toggle('hidden');
+  iconModal.classList.toggle('open');
+  body.classList.toggle('bodyActive')
 });
 
+/* function for dropdown onclick nav */
+let navIcons = document.querySelectorAll('.nav__blocks--icons')
+for(elements of navIcons) {
+  elements.addEventListener('click', () => {
+
+    if (event.target.closest('ul')) {
+      let elementsBlocks = (event.target.closest('ul').nextElementSibling);
+      elementsBlocks.classList.toggle('none');
+      let icon = (event.target.closest('ul').lastElementChild);
+      icon.classList.toggle('icon__rotate');
+    }
+  });
+};
+
+/* function for user change or logout */
+let user = document.getElementById('user');
+let userDropdown = document.getElementById('userDropdown');
+let icon = document.querySelector('.header__section--icon');
+
+user.addEventListener('click', () => {
+  userDropdown.classList.toggle('active');
+  icon.classList.toggle('icon__rotate');
+})
+
+/* function for lang & flag */
+let language = document.getElementById('lang');
+let flag = document.getElementById('langImg');
+
+language.addEventListener('click', () => {
+  let target = event.target.value;
+  if (target == 'RU') {
+    flag.src = './images/ru.png';
+  } else if (target == 'ARM') {
+    flag.src = './images/Flag_of_Armenia.png';
+  } else {
+    flag.src = './images/-Flag_of_the_United_Kingdom.png';
+  }
+});
 
 /* dinamic diagram in 3 lines № 1 */
 let ctx = document.querySelector('#myChart').getContext('2d');
-const count = 7;
-const labels = [];
-for (let i = 0; i < count; ++i) {
-  labels.push(i.toString());
-}
+const labels = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
 const datapoints2 = [20, 60, 20, -40, -30, 30, 60];
 const datapoints3 = [-30, 30, 60, 20, -40, -30, 20];
@@ -225,3 +258,5 @@ function ready(error, topo) {
       .on("mouseleave", mouseLeave )
     }
 /* /dinamic map */
+
+

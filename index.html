@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Front-End Developer test</title>
 </head>
-<body>
+<body class="body">
     <!-- container -->
     <div class="container"> 
 
@@ -19,95 +19,234 @@
             <section class="header__section">
 
                 <div class="header__section--lang">
-                    <img src="./images/-Flag_of_the_United_Kingdom.png" alt="" width="15px" height="10px">
-                    <select class="header__section--select" name="" id="">
-                        <option value="">EN</option>
-                        <option value="">RU</option>
-                        <option value="">ARM</option>
+                    <img id="langImg" src="./images/-Flag_of_the_United_Kingdom.png" alt="" width="15px" height="10px">
+                    <select class="header__section--select" name="" id="lang">
+                        <option value="EN">EN</option>
+                        <option value="RU">RU</option>
+                        <option value="ARM">ARM</option>
                     </select>
                 </div>
 
-                <div class="header__section--user">
-                    <img src="./images/userphohoto.png" alt="" width="42px" height="42px">
+                <div id="user" class="header__section--user">
+                    <img class="header__section--user--img" src="./images/userphohoto.png" alt="" width="42px" height="42px">
                     <div class="header__section--wrapper">
                         <p class="header__section--wrapper__name">Hello, Max!</p>
                         <p class="header__section--wrapper__login">Last login: Thu Mar 20 2014</p>
                     </div>
-                    <i class="fa-solid fa-sort-down"></i>
-                </div>
+                    <i class="fa-solid fa-sort-down header__section--icon" ></i>
 
+                </div>
+                
+                <div id="userDropdown" class="header__section--dropdown">
+                    <p>Username: Max</p>
+                    <div class="header__section--dropdown--wrapper">
+                        <button>Log Out</button>
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </div>
+                </div>
             </section>
 
         </header>
         <!--/header-->
+        
+        <div id="iconModal" class="modalIcon">
+            <img class="nav__icon" src="./images/icon.png" alt="" width="7px" height="11px">
+        </div>
 
             <!-- nav open-->
-            <nav id="navOpen" class="nav--open none">
+            <nav id="navOpen" class="nav--open">
 
                 <div class="nav__logo">
-                    <a href="#"><img src="./images/bw.png" alt="" width="48px" height="46px"></a>
+                    <a href="#"><img class="nav__logo--img" src="./images/bw.png" alt="" width="48px" height="46px"></a>
                 </div>
 
-                <div id="openModal" class="nav__modalIcon">
-                   <img src="./images/Shape 1 copy 4.png" alt="" width="7px" height="11px">
-                </div>
             
                 <!--nav blocks-->
                 <div class="nav__blocks">
 
                     <div class="nav__blocks--wrapper">
+
                         <ul class="nav__blocks--icons">
-                            <a href="#"><img src="./images/dashboard.png" alt="" width="16px" height="14px"></a>
+                            <a href="#"><img class="nav__blocks--icons--img" src="./images/dashboard.png" alt="" width="16px" height="14px"></a>
                             <li class="nav__blocks--icons__text">Dashboard</li>
                             <i class="fa-solid fa-sort-down"></i>
                         </ul>
+                    
+                        <div class="none">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Dashboard1</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Dashboard2</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Dashboard3</li>
+                            </ul>
+                        </div>
+
                         <ul class="nav__blocks--icons">
-                            <a href="#"><img src="./images/key.png" alt="" width="16px" height="15px"></a>
+                            <a href="#"><img class="nav__blocks--icons--img" src="./images/key.png" alt="" width="16px" height="15px"></a>
                             <li class="nav__blocks--icons__text">Account Management</li>
                             <i class="fa-solid fa-sort-down"></i>
                         </ul>
+
+                        <div class="none">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Account Management</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Account Management</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Account Management</li>
+                            </ul>
+                        </div>
+
                         <ul class="nav__blocks--icons">
-                            <a href="#"><img src="./images/user.png" alt="" width="13px" height="15px"></a>
+                            <a href="#"><img class="nav__blocks--icons--img" src="./images/user.png" alt="" width="13px" height="15px"></a>
                             <li class="nav__blocks--icons__text">My Account</li>
                             <i class="fa-solid fa-sort-down"></i>
                         </ul>
+
+                        <div class="none">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">My Account</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">My Account</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">My Account</li>
+                            </ul>
+                        </div>
                         <ul class="nav__blocks--icons">
-                            <a href="#"><img src="./images/tools.png" alt="" width="15px" height="13px"></a>
+                            <a href="#"><img class="nav__blocks--icons--img" src="./images/tools.png" alt="" width="15px" height="13px"></a>
                             <li class="nav__blocks--icons__text">Marketing Tools</li>
                             <i class="fa-solid fa-sort-down"></i>
                         </ul>
+
+                        <div class="none">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Marketing Tools</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Marketing Tools</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Marketing Tools</li>
+                            </ul>
+                        </div>
+
                         <ul class="nav__blocks--icons">
-                            <a href="#"><img src="./images/reports.png" alt="" width="16px" height="13px"></a>
+                            <a href="#"><img class="nav__blocks--icons--img" src="./images/reports.png" alt="" width="16px" height="13px"></a>
                             <li class="nav__blocks--icons__text">Reports</li>
                             <i class="fa-solid fa-sort-down"></i>
                         </ul>
+
+                        <div class="none">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Reports</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Reports</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Reports</li>
+                            </ul>
+                        </div>
+
                         <ul class="nav__blocks--icons">
-                            <a href="#"><img src="./images/payments.png" alt="" width="17px" height="13px"></a>
+                            <a href="#"><img class="nav__blocks--icons--img" src="./images/payments.png" alt="" width="17px" height="13px"></a>
                             <li class="nav__blocks--icons__text">Payments</li>
                             <i class="fa-solid fa-sort-down"></i>
                         </ul>
+
+                        <div class="none">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Payments</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Payments</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Payments</li>
+                            </ul>
+                        </div>
+
                         <ul class="nav__blocks--icons">
-                            <a href="#"><img src="./images/Settings.png" alt="" width="14px" height="14px"></a>
+                            <a href="#"><img class="nav__blocks--icons--img" src="./images/Settings.png" alt="" width="14px" height="14px"></a>
                             <li class="nav__blocks--icons__text">Settings</li>
                             <i class="fa-solid fa-sort-down"></i>
                         </ul>
+
+                        <div class="none">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Settings</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Settings</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Settings</li>
+                            </ul>
+                        </div>
+
                     </div>
                     <div class="nav__blocks--wrapper2">
                         <ul class="nav__blocks--icons">
-                            <img src="./images/favorites.png" alt="" width="16px" height="14px">
+                            <img class="nav__blocks--icons--img" src="./images/favorites.png" alt="" width="16px" height="14px">
                             <li class="nav__blocks--icons__text">Favorites</li>
                             <i class="fa-solid fa-chevron-down"></i>
                         </ul>
+
+                        <div class="none nav__blocks--icons__wrapper">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Favorites</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Favorites</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Favorites</li>
+                            </ul>
+                        </div>
+
                         <ul class="nav__blocks--icons">
-                            <img src="./images/recently.png" alt="" width="16px" height="16px">
+                            <img class="nav__blocks--icons--img" src="./images/recently.png" alt="" width="16px" height="16px">
                             <li class="nav__blocks--icons__text">Recently Used</li>
                             <i class="fa-solid fa-chevron-down"></i>
                         </ul>
+
+                        <div class="none  nav__blocks--icons__wrapper" >
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Recently Used</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Recently Used</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Recently Used</li>
+                            </ul>
+                        </div>
+
+
                         <ul class="nav__blocks--icons">
-                            <img src="./images/visited.png" alt="" width="18px" height="10px">
+                            <img class="nav__blocks--icons--img" src="./images/visited.png" alt="" width="18px" height="10px">
                             <li class="nav__blocks--icons__text">Visited Player</li>
                             <i class="fa-solid fa-chevron-down"></i>
                         </ul>
+
+                        <div class="none nav__blocks--icons__wrapper">
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Visited Player</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Visited Player</li>
+                            </ul>
+                            <ul class="nav__blocks--on__hover">
+                                <li class="nav__blocks--icons__text">Visited Player</li>
+                            </ul>
+                        </div>
                     </div>
 
                 </div>
@@ -121,14 +260,8 @@
             <nav id="navClose" class="nav--closed">
             
                 <div class="nav__logo">
-                    <a href="#"><img src="./images/bw.png" alt="" width="48px" height="46px"></a>
+                    <a href="#"><img class="nav__logo--img" src="./images/bw.png" alt="" width="48px" height="46px"></a>
                 </div>
-            
-                
-                <div id="closeModal" class="nav__modalIcon">
-                   <img src="./images/Shape 1 copy 4.png" alt="" width="7px" height="11px">
-                </div>
-                
             
                 <!--nav blocks-->
                 <div class="nav__blocks">
@@ -258,8 +391,11 @@
                 <div class="diagram__stats--header">
                     <h6 class="diagram__stats--text">Medias Staats</h6>
                     <span class="diagram__stats--span">
-                        <p class="diagram__stats--span__txt">Last Week</p>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <select class="diagram__stats--span__select" name="icon">
+                          <option value="Last Week">Last Week</option>
+                          <option value="Last Month">Last Month</option>
+                          <option value="Last Day">Last Day</option>
+                        </select>
                     </span>
                 </div>
 
@@ -315,8 +451,11 @@
                 <div class="diagram__map--title">
                     <h6 class="diagram__map--text">Medias Staats</h6>
                     <span class="diagram__map--span">
-                        <p class="diagram__map--span__txt">Last Month</p>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <select class="diagram__map--span__select" name="icon">
+                            <option value="Last Month">Last Month</option>
+                            <option value="Last Week">Last Week</option>
+                            <option value="Last Day">Last Day</option>
+                          </select>
                     </span>
                 </div>
 
@@ -327,8 +466,11 @@
                 <div class="diagram__map--info">
 
                     <span class="diagram__map--info__span">
-                        <p class="diagram__map--span__txt">Affiliate Sign Ups</p>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <select class="diagram__map--info__span--select" name="icon">
+                            <option value="Affiliate Sign Ups">Affiliate Sign Ups</option>
+                            <option value=""></option>
+                            <option value=""></option>
+                          </select>
                     </span>
 
                     <div class="diagram__map--span__stats">
